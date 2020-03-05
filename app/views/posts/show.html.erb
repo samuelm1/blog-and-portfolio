@@ -6,6 +6,7 @@
 		</header>
 		<div id="content">
 			<%= markdown @post.content %>
+			<a href="<%= @post.link %>" class="project_button" target="blank">Visit <%= @post.title %></a>
 		</div>
 		<hr>
 		<div id="share_box">
@@ -13,7 +14,8 @@
 		    <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @samgathitho - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
     		<!-- Facebook -->
     		<a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
-   			<a href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
+   			<!-- whatsapp -->
+   			
 		</div>
 		<hr>
 		<%= render 'discus'%>
