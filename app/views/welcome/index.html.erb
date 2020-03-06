@@ -3,10 +3,10 @@
 			<h2>About</h2>
 			<hr>
 			<p>I am a designer &amp; developer </p>
-			<p>i work s a full stack developer using the ruby on <a href="#">rails</a> framework</p>
+			<p>I work as a full stack <a href="">ruby on rails</a> developer, IT support specialist and consultant<br> writing articles</p>
 		</div>
 		<div class="col-2 homepage_content">
-			<h2>Stuff i have written</h2>
+			<h2>My Articles</h2>
 			<hr>
 
 			<% @post.each do |post|%>
@@ -16,7 +16,7 @@
 			
 		</div>
 		<div class="col-3 homepage_content">
-			<h2>Stuff i have built</h2>
+			<h2>My Projects</h2>
 			<hr>
 			<% @project.each do |project|%>
 				<h3><a href="#"><%= link_to project.title,project %></a></h3>
