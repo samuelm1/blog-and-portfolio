@@ -1,7 +1,9 @@
+
 <h1 id="page_title">hello</h1>
 	
 	<div class="skinny_wrapper wrapper_padding">
 		<%= form_for @contact do |f| %>
+
 		<%= f.label :name %><br>
 		<%= f.text_field :name, required: true %>
 
@@ -9,6 +11,7 @@
 
 		<%= f.label :email %><br>
 		<%= f.email_field :email, required: true %>
+
 		<br>
 
 		<%= f.label :message %><br>
@@ -18,6 +21,10 @@
 			<%= f.label :nickname %><br>
 			<%= f.text_field :nickname, hint: 'leave this field blank' %>
 		</div>
+
 		<%= f.submit 'Send Message', class: "button" %>
 		<% end %>
+	</div>
+
+
 	</div>
