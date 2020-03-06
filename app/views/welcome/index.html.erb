@@ -2,11 +2,11 @@
 		<div class="col-1 about homepage_content">
 			<h2>About</h2>
 			<hr>
-			<p>I am a designer &amp; developer </p>
-			<p>i work s a full stack developer using the ruby on <a href="#">rails</a> framework</p>
+			<p>I am a web designer &amp; developer </p>
+			<p>I work as a full stack developer using the <i><a href=https://rubyonrails.org/>ruby on rails</a></i> framework, offer IT support and consultancy and write articles</p>
 		</div>
 		<div class="col-2 homepage_content">
-			<h2>Stuff i have written</h2>
+			<h2>My Posts</h2>
 			<hr>
 
 			<% @post.each do |post|%>
@@ -16,7 +16,7 @@
 			
 		</div>
 		<div class="col-3 homepage_content">
-			<h2>Stuff i have built</h2>
+			<h2>My Projects</h2>
 			<hr>
 			<% @project.each do |project|%>
 				<h3><a href="#"><%= link_to project.title,project %></a></h3>
